@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+Author- Ben Bryan.
+Built with scene builder
+
+-->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InputController">
+   <top>
+      <HBox prefHeight="25.0" prefWidth="590.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="223.0" />
+            <Label prefHeight="30.0" prefWidth="184.0" text="INPUT INVENTORY">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Region prefHeight="84.0" prefWidth="49.0" />
+                  <Label text="ID:" />
+                  <Region prefHeight="84.0" prefWidth="43.0" />
+                  <TextField id="idInput" fx:id="idInput" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Region prefHeight="84.0" prefWidth="48.0" />
+                  <Label text="PRICE:" />
+                  <Region prefHeight="84.0" prefWidth="25.0" />
+                  <TextField id="priceInput" fx:id="priceInput" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Region prefHeight="84.0" prefWidth="47.0" />
+                  <Label text="NAME:" />
+                  <Region prefHeight="84.0" prefWidth="23.0" />
+                  <TextField id="nameInput" fx:id="nameInput" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Region prefHeight="200.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#addITemClicked" prefHeight="39.0" prefWidth="71.0" text="ADD ITEM" />
+                  <Region prefHeight="200.0" prefWidth="200.0" />
+                  <Button mnemonicParsing="false" onAction="#returnMenuClicked" prefHeight="64.0" prefWidth="112.0" text="Return to &#10;previous menu" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets left="10.0" top="5.0" />
+   </padding>
+</BorderPane>
